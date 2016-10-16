@@ -72,7 +72,7 @@ class ConfigExtendCommand extends ConfigCommand {
             const pendingConfig = this.loader.loadConfig(filename);
 
             if (pendingConfig instanceof Config) {
-                config.dependencyTree.children.push(pendingConfig.dependencyTree);
+                // config.dependencyTree.children.push(pendingConfig.dependencyTree);
 
                 let prevConfig = pendingConfig.clone();
 

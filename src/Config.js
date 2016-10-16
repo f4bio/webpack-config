@@ -10,7 +10,7 @@ import ConfigDependency from './ConfigDependency';
  * @private
  * @type {String}
  */
-const DEPENDENCY_TREE = 'DEPENDENCY_TREE';
+// const DEPENDENCY_TREE = 'DEPENDENCY_TREE';
 
 /**
  * @private
@@ -121,13 +121,13 @@ class Config {
      * @readonly
      * @type {ConfigDependency}
      */
-    get dependencyTree() {
-        if (!this[DEPENDENCY_TREE]) {
-            this[DEPENDENCY_TREE] = new ConfigDependency(this);
-        }
-
-        return this[DEPENDENCY_TREE];
-    }
+    // get dependencyTree() {
+        // if (!this[DEPENDENCY_TREE]) {
+        //     this[DEPENDENCY_TREE] = new ConfigDependency(this);
+        // }
+        //
+        // return this[DEPENDENCY_TREE];
+    // }
 
     /**
      * import Config from 'webpack-config';
@@ -268,7 +268,7 @@ class Config {
             }
         }
 
-        delete properties[DEPENDENCY_TREE];
+        // delete properties[DEPENDENCY_TREE];
 
         return properties;
     }
